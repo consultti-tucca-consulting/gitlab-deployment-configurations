@@ -16,10 +16,15 @@ Our deployment can be easily moved to [AWS GovCloud](https://aws.amazon.com/govc
  - __What motivated you to work on this problem?__
  - __What insights you expected to gain by working on this problem?__
 
+We were interested in how would a source code management system be deployed to a cloud environment in practice and what kind of tools can we use to automate this process as much as possible. We wanted to make this project as replicatable as possible by following best practices of IaC. 
+
+We expected to learn much about cloud providers(AWS) and IaC tooling(Terraform, Ansible). 
 
 
 ## Background (2 points)
  - __Enumerate the related works or projects that addressed this problem__
+
+
 
 ## System Architecture (Total 5 points)
 
