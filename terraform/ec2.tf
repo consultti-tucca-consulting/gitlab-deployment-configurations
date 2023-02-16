@@ -7,11 +7,12 @@ data "aws_ami" "ubuntu" {
   }
 }
 
-resource "aws_instance" "web" {
+resource "aws_instance" "gitlab_ec2_instance" {
   ami           = data.aws_ami.ubuntu.id
   instance_type = "t2.micro"
+  security_groups = [aws_security_group.gitlab_security_group.name]
   tags = {
-    Name = "HelloWorld"
+    Name = "gitlab_instance"
   }
 }
 
