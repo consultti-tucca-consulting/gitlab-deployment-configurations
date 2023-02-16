@@ -6,22 +6,16 @@ __Consider this to be an elevator pitch for your work, and try to summarize your
  - __What is the problem area you are working in, and why is it important?__
  - __What are the key insights and takeaways from your work?__
 
-### What
- - working as a team across the globe on highly secret intellectual property software
+Introducing our solution for teams working on highly secret intellectual property software: a secure source code management system with high availability.
 
-### Need
- - secure source code management system with high availability
+Conventional and popular git based source code management systems like GitHub and GitLab are not an option for our clients, but we have the solution. We create a deployment configuration for deploying a git version control system on AWS cloud solution services.
 
-### Problem
- - conventional and popular git based source code management systems like GitHub and GitLab are not an option
-
-### Solution
- - create deployment configuration for deploying git version control system on AWS cloud solution services
- - same deployment can be easily moved on AWS GovCloud or other secure cloud solution service
+Our deployment can be easily moved to AWS GovCloud or other secure cloud solution services, ensuring the highest level of security for your intellectual property. Join us and rest easy knowing your code is safe with our secure source code management system.
 
 ## Motivation  (3 points)
  - __What motivated you to work on this problem?__
  - __What insights you expected to gain by working on this problem?__
+
 
 
 ## Background (2 points)
@@ -30,6 +24,15 @@ __Consider this to be an elevator pitch for your work, and try to summarize your
 ## System Architecture (Total 5 points)
 
  - __What are the key components of your system, and why are these part of your system?__
+
+The components that make up our system are critical for ensuring its smooth operation and efficiency. One of the key components is Terraform, which serves as the infrastructure as a code platform that enables us to easily deploy our system. With Terraform, we can deploy our system in a more efficient and streamlined manner, allowing us to save time and resources in the process.
+
+In addition, we also use Terraform Cloud, which helps us to store our deployment configurations and deployment state. This ensures that everyone in the team is aware of what is currently deployed, making it easier for us to stay on track and minimize the risk of errors or conflicts.
+
+Furthermore, we rely on AWS Cloud Services, which offer high availability and reliability, ensuring that our system remains up and running at all times. To achieve this, we utilize the EC2 instance, which enables us to easily replicate our service once it has been set up. This ensures that we can quickly and easily scale up our operations as needed, without having to worry about system downtime or disruptions.
+
+Overall, these components form the backbone of our system, providing us with the necessary tools and capabilities to deploy and maintain a robust, reliable, and efficient system.
+
  - __How are these components related to each other,  why are they connected in this way?__
  - __What are the various hardware and software resources you used for your system?__
  - __What were the various alternatives and tradeoffs that were behind the selection of these resources?__
