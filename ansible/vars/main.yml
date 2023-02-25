@@ -1,0 +1,49 @@
+---
+# General config.
+gitlab_domain: "13.51.205.79"
+gitlab_external_url: "https://{{ gitlab_domain }}/"
+gitlab_git_data_dir: "/var/opt/gitlab/git-data"
+gitlab_edition: "gitlab-ce"
+gitlab_backup_path: "/var/opt/gitlab/backups"
+gitlab_config_template: "gitlab.rb.j2"
+
+# SSL Configuration.
+gitlab_redirect_http_to_https: true
+gitlab_ssl_certificate: "/etc/gitlab/ssl/{{ gitlab_domain }}.crt"
+gitlab_ssl_certificate_key: "/etc/gitlab/ssl/{{ gitlab_domain }}.key"
+
+# SSL Self-signed Certificate Configuration.
+gitlab_create_self_signed_cert: true
+gitlab_self_signed_cert_subj: "/C=US/ST=Missouri/L=Saint Louis/O=IT/CN={{ gitlab_domain }}"
+
+# LDAP Configuration.
+gitlab_ldap_enabled: false
+
+# SMTP Configuration
+gitlab_smtp_enable: false
+
+# Probably best to leave this as the default, unless doing testing.
+gitlab_restart_handler_failed_when: 'gitlab_restart.rc != 0'
+
+# Dependencies.
+gitlab_dependencies:
+  - openssh-server
+  - postfix
+  - curl
+  - openssl
+  - tzdata
+
+# Optional settings.
+gitlab_time_zone: "UTC"
+gitlab_backup_keep_time: "604800"
+gitlab_download_validate_certs: true
+gitlab_default_theme: '2'
+
+# Email configuration.
+gitlab_email_enabled: false
+
+# Registry configuration.
+gitlab_registry_enable: false
+
+# LetsEncrypt configuration.
+gitlab_letsencrypt_enable: false
