@@ -1,6 +1,6 @@
 resource "aws_instance" "gitlab_ec2_instance" {
   ami             = "ami-09e1162c87f73958b"
-  instance_type   = "t3.micro"
+  instance_type   = "t3.medium"
   security_groups = [aws_security_group.gitlab_security_group.name]
 
   key_name = aws_key_pair.gitlab_ec2_key.key_name
