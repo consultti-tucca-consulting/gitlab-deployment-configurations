@@ -6,11 +6,9 @@ __Consider this to be an elevator pitch for your work, and try to summarize your
  - __What is the problem area you are working in, and why is it important?__
  - __What are the key insights and takeaways from your work?__
 
-Introducing our solution for teams working on highly secret intellectual property software: a secure source code management system with high availability.
+Our solution is designed for teams working on highly confidential intellectual property software, that need high availability for their source code management system across the globe.
 
-Conventional and popular git based source code management systems like GitHub and GitLab are not an option for our clients, but we have the solution. We create a deployment configuration for deploying a git version control system on AWS cloud solution services.
-
-Our deployment can be easily moved to [AWS GovCloud](https://aws.amazon.com/govcloud-us/?whats-new-ess.sort-by=item.additionalFields.postDateTime&whats-new-ess.sort-order=desc) or other secure cloud solution services, ensuring the highest level of security for your intellectual property. Join us and rest easy knowing your code is safe with our secure source code management system.
+Conventional and popular git-based source code management systems like ones hosted by GitHub and GitLab may not be suitable for such teams. However, our solution provides a viable alternative. We create a deployment configuration for deploying a git version control system on AWS cloud solution services. Our deployment can be then easily moved to AWS GovCloud or other secure cloud solution services. This ensures the highest level of security while maintaining high availability.
 
 ## Motivation  (3 points)
  - __What motivated you to work on this problem?__
