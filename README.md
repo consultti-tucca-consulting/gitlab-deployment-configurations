@@ -73,3 +73,8 @@ While it is possible to rent bigger EC2 instances to increase resources, scaling
    - Try to target the video duration to be less than 10 minutes. There is no lower limit for the duration of the video. You can go over 10 minutes by a few seconds (up to 2 minutes) but try to keep it under 10 minutes.
  - __Also mention the distribution of the work:__
    - Examples -- i) all participants contributed equally, ii) if a group consisted of A,B,C,D, where contributions are not equal you can say something like: 50% done by A, 25% done by B, and 20% done by C, and 5 % done by D.
+
+
+  Our GitLab CE deployment can be accessed in [13.53.187.94](13.53.187.94) and the the project repo is accessible [here](https://13.53.187.94/Melimet/gitlab-deployment-configurations/-/tree/main/). As you can see, the project source code is hosted inside our GitLab CE deployment. In case something goes wrong, the source code is also accessible on [GitHub](https://github.com/consultti-tucca-consulting/gitlab-deployment-configurations). 
+
+  Each of the group members contributed equally to the course project.
