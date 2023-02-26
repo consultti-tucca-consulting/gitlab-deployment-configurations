@@ -16,9 +16,9 @@ Our deployment can be easily moved to [AWS GovCloud](https://aws.amazon.com/govc
  - __What motivated you to work on this problem?__
  - __What insights you expected to gain by working on this problem?__
 
-We were interested in how would a source code management system be deployed to a cloud environment in practice and what kind of tools can we use to automate this process as much as possible. We wanted to make this project as replicatable as possible by following best practices of IaC.
+We were interested in how would a source code management system be deployed to a cloud environment in practice and what kind of tools can we use to automate this process as much as possible. We wanted to make this project as replicatable as possible by following best practices of [IaC](https://en.wikipedia.org/wiki/Infrastructure_as_code).
 
-We expected to learn much about cloud providers(AWS) and IaC tooling(Terraform, Ansible).
+We expected to learn much about cloud providers([AWS](https://aws.amazon.com/)) and IaC tooling([Terraform](https://www.terraform.io/),  [Ansible](https://docs.ansible.com/)).
 
 
 ## Background (2 points)
@@ -36,19 +36,17 @@ From our team members' personal experience, some companies deploy version contro
 
 Our system relies on several components that are critical for its smooth operation and efficiency. One of the key components is Terraform, an infrastructure as code platform that enables us to easily deploy our system. With Terraform, we can deploy our system in a more efficient and streamlined manner, saving time and resources in the process.
 
-To store our deployment configurations and deployment state, we use Terraform Cloud. This ensures that all team members are aware of the current deployment status, helping us to stay on track and minimize the risk of errors or conflicts.
+To store our deployment configurations and deployment state, we use [Terraform Cloud](https://cloud.hashicorp.com/products/terraform). This ensures that all team members are aware of the current deployment status, helping us to stay on track and minimize the risk of errors or conflicts.
 
 For deploying the GitLab platform application into the cloud instance, we utilize Ansible.
 
 To ensure high availability and reliability of our system, we rely on Amazon Web Services (AWS) Cloud Services. Specifically, we utilize the EC2 instance, which enables us to easily replicate our service once it has been set up. This ensures that we can quickly and easily scale up our operations as needed without worrying about system downtime or disruptions.
 
-Our system uses GitLab Community Edition, an open-source software development platform that offers built-in version control, issue tracking, code review, and continuous integration/continuous deployment (CI/CD) tools. This provided us with everything we needed.
+Our system uses [GitLab Community Edition](https://gitlab.com/rluna-gitlab/gitlab-ce), an open-source software development platform that offers built-in version control, issue tracking, code review, and continuous integration/continuous deployment (CI/CD) tools. This provided us with everything we needed.
 
 For hosting our GitLab CE application, we chose the [t3.medium](https://aws.amazon.com/ec2/instance-types/t3/) EC2 instance from AWS. This virtual machine has 4GB of memory, 2 vCPUs, and network burst bandwidth of 5 Gbps. We selected this instance type because it was the cheapest EC2 instance with sufficient resources to host GitLab CE.
 
-We chose AWS as our cloud provider because of our familiarity with their platform. Other notable alternatives include Microsoft Azure and Google Cloud Platform.
-
-
+We chose AWS as our cloud provider because of our familiarity with their platform and it being the most widespread cloud provider. Other notable alternatives include Microsoft Azure and Google Cloud Platform.
 
 ## Performance Evaluation (5 points)
 
