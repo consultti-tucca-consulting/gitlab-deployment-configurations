@@ -32,11 +32,13 @@ From our team members' personal experience, some companies deploy version contro
  - __What are the various hardware and software resources you used for your system?__
  - __What were the various alternatives and tradeoffs that were behind the selection of these resources?__
 
+![Architecture](./docs/images/cec_gitlab.png)
+
 Our system relies on several components that are critical for its smooth operation and efficiency. One of the key components is Terraform, an infrastructure as code platform that enables us to easily deploy our system. With Terraform, we can deploy our system in a more efficient and streamlined manner, saving time and resources in the process.
 
 To store our deployment configurations and deployment state, we use [Terraform Cloud](https://cloud.hashicorp.com/products/terraform). This ensures that all team members are aware of the current deployment status, helping us to stay on track and minimize the risk of errors or conflicts.
 
-For deploying the GitLab platform application into the cloud instance, we utilize Ansible.
+For deploying the GitLab platform application into the cloud instance, we utilize Ansible. With Ansible, we can enable automation when depoying to a new environment.
 
 To ensure high availability and reliability of our system, we rely on Amazon Web Services (AWS) Cloud Services. Specifically, we utilize the EC2 instance, which enables us to easily replicate our service once it has been set up. This ensures that we can quickly and easily scale up our operations as needed without worrying about system downtime or disruptions.
 
