@@ -1,5 +1,5 @@
 # gitlab-deployment-configurations
-
+Erkka Rahikainen - Joakim Joensuu - Joni Taajamo
 
 ## Introduction  (5 points)
 __Consider this to be an elevator pitch for your work, and try to summarize your work in this section.__
