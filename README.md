@@ -34,24 +34,19 @@ From our team members' personal experience, some companies deploy version contro
  - __What are the various hardware and software resources you used for your system?__
  - __What were the various alternatives and tradeoffs that were behind the selection of these resources?__
 
+Our system relies on several components that are critical for its smooth operation and efficiency. One of the key components is Terraform, an infrastructure as code platform that enables us to easily deploy our system. With Terraform, we can deploy our system in a more efficient and streamlined manner, saving time and resources in the process.
 
-The components that make up our system are critical for ensuring its smooth operation and efficiency. One of the key components is Terraform, which serves as the infrastructure as a code platform that enables us to easily deploy our system. With Terraform, we can deploy our system in a more efficient and streamlined manner, allowing us to save time and resources in the process.
+To store our deployment configurations and deployment state, we use Terraform Cloud. This ensures that all team members are aware of the current deployment status, helping us to stay on track and minimize the risk of errors or conflicts.
 
-In addition, we also use Terraform Cloud, which helps us to store our deployment configurations and deployment state. This ensures that everyone in the team is aware of what is currently deployed, making it easier for us to stay on track and minimize the risk of errors or conflicts.
+For deploying the GitLab platform application into the cloud instance, we utilize Ansible.
 
-Ansible is used for deploying the GitLab platform application into the cloud instance.
+To ensure high availability and reliability of our system, we rely on Amazon Web Services (AWS) Cloud Services. Specifically, we utilize the EC2 instance, which enables us to easily replicate our service once it has been set up. This ensures that we can quickly and easily scale up our operations as needed without worrying about system downtime or disruptions.
 
-Furthermore, we rely on AWS Cloud Services, which offer high availability and reliability, ensuring that our system remains up and running at all times. To achieve this, we utilize the EC2 instance, which enables us to easily replicate our service once it has been set up. This ensures that we can quickly and easily scale up our operations as needed, without having to worry about system downtime or disruptions.
+Our system uses GitLab Community Edition, an open-source software development platform that offers built-in version control, issue tracking, code review, and continuous integration/continuous deployment (CI/CD) tools. This provided us with everything we needed.
 
-Overall, these components form the backbone of our system, providing us with the necessary tools and capabilities to deploy and maintain a robust, reliable, and efficient system.
+For hosting our GitLab CE application, we chose the [t3.medium](https://aws.amazon.com/ec2/instance-types/t3/) EC2 instance from AWS. This virtual machine has 4GB of memory, 2 vCPUs, and network burst bandwidth of 5 Gbps. We selected this instance type because it was the cheapest EC2 instance with sufficient resources to host GitLab CE.
 
-We picked GitLab Community Edition, an open source software development platform, that offers built-in version control, issue tracking, code review and CI/CD tools, which was everything that we needed.
-
-From Amazon Web Services we used [t3.medium](https://aws.amazon.com/ec2/instance-types/t3/) EC2 instance - a virtual machine for running our GitLab platform application.
-
-t3.medium instance has 4GB of memory, 2 vCPUs and network burst bandwidth of 5 Gbps. We decided to use this version because it was cheapest EC2 instance that had enough resources to host GitLab CE application.
-
-Amazon was chosen as a cloud provider since we were more familiar with their platform. Other most known alternatives would have been Microsoft Azure, Google Cloud Platform.
+We chose AWS as our cloud provider because of our familiarity with their platform. Other notable alternatives include Microsoft Azure and Google Cloud Platform.
 
 
 
@@ -68,17 +63,13 @@ We were able to push commit to our GitLab source control system running in virtu
  - __What are the key weaknesses?__
  - __If you had to do this work again, how would your approach be different?__
 
-Thanks to Ansible and Terraform, our solution is fully redeployable in any AWS based cloud enviroment.
+Our solution is designed to be fully redeployable in any AWS-based cloud environment. This is made possible through the use of Ansible and Terraform.
 
-Since it relies on Amazon Web services it has really high availability.
-```
-"AWS will use commercially reasonable efforts to make Amazon EC2 available for each AWS region with a Monthly Uptime Percentage of at least 99.99%".
-```
-[Amazon Compute Service Level Agreement](https://aws.amazon.com/compute/sla/)
+As the solution relies on Amazon Web Services, it benefits from its high availability. According to the [Amazon Compute Service Level Agreement](https://aws.amazon.com/compute/sla/), AWS will make commercially reasonable efforts to ensure that Amazon EC2 is available for each AWS region with a Monthly Uptime Percentage of at least 99.99%.
 
-Terraform deployment are not cloud service provider agnostic, meaning written configurations are vendor locked to Amazon's cloud services.
+However, it is important to note that Terraform deployment configurations are not cloud service provider agnostic, and are thus vendor-locked to Amazon's cloud services.
 
-Even though we could rent bigger EC2 instance to easily add more resources, we cannot yet scale the application for multiple independent instances. To enable this we would need to configure and deploy load balancer to our VPC that [AWS has to offer](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/load-balancer-types.html).
+While it is possible to rent bigger EC2 instances to increase resources, scaling the application for multiple independent instances is not yet feasible. To enable this functionality, we would need to configure and deploy a load balancer to our VPC, which can be achieved using the load balancer types that AWS has to offer. More information on this can be found in the [AWS documentation](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/load-balancer-types.html).
 
 ## Availability (5 points)
  - __Pointer to the source code and datasets__
