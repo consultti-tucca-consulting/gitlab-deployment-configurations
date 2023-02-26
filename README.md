@@ -32,7 +32,7 @@ From our team members' personal experience, some companies deploy version contro
  - __What are the various hardware and software resources you used for your system?__
  - __What were the various alternatives and tradeoffs that were behind the selection of these resources?__
 
-![Architecture](./docs/images/cec_gitlab.png)
+![Architecture diagram representing our deployment flow and single EC2 instance architechture](./docs/images/cec_gitlab.png)
 
 Our system relies on several components that are critical for its smooth operation and efficiency. One of the key components is Terraform, an infrastructure as code platform that enables us to easily deploy our system. With Terraform, we can deploy our system in a more efficient and streamlined manner, saving time and resources in the process.
 
@@ -56,6 +56,8 @@ We chose AWS as our cloud provider because of our familiarity with their platfor
 
 We were able to push commit to our GitLab source control system running in virtual private network.
 
+For an admin experienced in cloud infrastructure services, deploying this architechture to new cloud environment takes about 10 minutes.
+
 ## Discussion (5 points)
  - __What are the key strengths of your work?__
  - __What are the key weaknesses?__
@@ -77,6 +79,6 @@ While it is possible to rent bigger EC2 instances to increase resources, scaling
    - Examples -- i) all participants contributed equally, ii) if a group consisted of A,B,C,D, where contributions are not equal you can say something like: 50% done by A, 25% done by B, and 20% done by C, and 5 % done by D.
 
 
-  Our GitLab CE deployment can be accessed in [13.53.187.94](13.53.187.94) and the the project repo is accessible [here](https://13.53.187.94/Melimet/gitlab-deployment-configurations/-/tree/main/). As you can see, the project source code is hosted inside our GitLab CE deployment. In case something goes wrong, the source code is also accessible on [GitHub](https://github.com/consultti-tucca-consulting/gitlab-deployment-configurations). 
+  Our GitLab CE deployment can be accessed in [13.53.187.94](13.53.187.94) and the the project repo is accessible [here](https://13.53.187.94/Melimet/gitlab-deployment-configurations/-/tree/main/). As you can see, the project source code is hosted inside our GitLab CE deployment. In case something goes wrong, the source code is also accessible on [GitHub](https://github.com/consultti-tucca-consulting/gitlab-deployment-configurations).
 
   Each of the group members contributed equally to the course project.
