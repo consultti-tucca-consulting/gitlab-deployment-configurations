@@ -71,7 +71,7 @@ However, it is important to note that Terraform deployment configurations are no
 
 While it is possible to rent bigger EC2 instances to increase resources, scaling the application for multiple independent instances is not yet feasible. To enable this functionality, we would need to configure and deploy a load balancer to our VPC, which can be achieved using the load balancer types that AWS has to offer. More information on this can be found in the [AWS documentation](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/load-balancer-types.html).
 
-## Availability (5 points)
+## Availability (5 points) - EDIT: The instance that was running has now been terminated and is no longer available
  - __Pointer to the source code and datasets__
  - __Pointer to a video summarizing and demonstrating your solution__
  - __Also mention the distribution of the work:__
